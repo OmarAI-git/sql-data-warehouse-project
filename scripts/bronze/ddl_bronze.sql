@@ -1,4 +1,3 @@
-
 IF OBJECT_ID ('bronze.crm_cum_info','U') IS NOT NULL
 	DROP TABLE bronze.crm_cum_info;
 
