@@ -33,12 +33,12 @@ BEGIN
 			CASE 
 				WHEN UPPER(TRIM(cst_marital_status)) = 'S' THEN 'Single'
 				WHEN UPPER(TRIM(cst_marital_status)) = 'M' THEN 'Married'
-				ELSE 'Unknown'
+				ELSE 'n/a'
 			END cst_marital_status, -- Normalize marital status values to readable format
 			CASE 
 				WHEN UPPER(TRIM(cst_gndr)) = 'M' THEN 'Male'
 				WHEN UPPER(TRIM(cst_gndr)) = 'F' THEN 'Female'
-				ELSE 'Unknown'
+				ELSE 'n/a'
 			END cst_gndr, -- Normalize gender values to readable format
 			cst_create_date
 		FROM(
